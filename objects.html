@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Objects</title>
+</head>
+<body>
+
+	<script> 
+    /*const student={
+      name: 'Devansh',
+      age: 21,
+      branch: 'CSE'
+    };
+    console.log(student);
+    console.table(student);
+    console.log(student.name);
+
+    student.name='Manasvi';
+    console.log(student);
+
+    student.course='btech';
+    console.log(student);
+
+    delete student.course;
+    console.log(student);*/
+
+    const product={
+      name: 'shirt',
+      rating: {
+        star: 4.5,
+        count: 87
+      },
+      fun: function fun1(){
+        console.log('hello');
+      }
+    };
+    console.log(product);
+    console.log(product.name);
+    console.log(product['rating']);
+    console.log(product.fun);  
+    product.fun();
+     
+    console.log(JSON.stringify(product));
+    const jsonString=JSON.stringify(product);
+    console.log(JSON.parse(jsonString));
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

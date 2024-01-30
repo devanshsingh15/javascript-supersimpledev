@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Cart-Quantity</title>
+	
+</head>
+<body>
+  <p>Cart Quantity</p>
+  <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    if(cartQuantity<maxCart){
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      alert(`Cart Quantity: ${cartQuantity}`);
+    }
+    else {
+      alert('The cart is full.');
+    }
+    
+    ">Show Quantity</button>
+
+    <button onclick="
+    cartQuantity++;
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to Cart</button>
+  
+  <button onclick="
+  cartQuantity+=2;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+2</button>
+  
+  <button onclick="
+  cartQuantity+=3;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+3</button>
+
+  <button onclick="
+  cartQuantity+=4;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+4</button>
+
+  <button onclick="
+  cartQuantity+=5;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">+5</button>
+
+  <button onclick="
+  cartQuantity-=2; 
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">-2</button>
+
+  <button onclick="
+  cartQuantity-=3;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">-3</button>
+
+  <button onclick="
+  cartQuantity--;
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Remove from Cart</button>
+  
+  <button onclick="
+  cartQuantity=0;
+  console.log('Cart Reset');
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Reset cart</button>
+
+	<script>
+		let cartQuantity=0;
+    const maxCart=10;
+
+    let product={
+      name: 'basketball',
+      price: 2095
+    };
+    console.log(product);
+    console.log(`price before updation: ${product.price}`);
+    product.price+=500;
+    console.log(`price after updation: ${product.price}`);
+    product['delivery-time']='3 days';
+    console.log(product);
+
+    product1={
+      name: 'tshirt',
+      price: 799
+    };
+    product2={
+      name: 'fryer',
+      price: 1899
+    };
+    function comparePrice(product1,product2){
+      if(product1.price>product2.price) console.log('product 2 is less explensive');
+      else if(product1.price<product2.price) console.log('product 1 is less expensive');
+      else console.log('products are equal');
+    }
+
+    function isSameProduct(product1,product2){
+      if(product1==product2) console.log('true');
+      else console.log('false');
+    }
+    comparePrice(product1,product2);
+    isSameProduct(product1,product2);
+    let str='Good Morning';
+    console.log(str.toLowerCase());
+    console.log('test'.repeat(2));
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
