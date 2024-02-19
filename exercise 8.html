@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+</head>
+<body>
+  <script>
+    const product={
+      name: "Basketball",
+      price: 2095
+    };
+    product.price+=500;
+    product['delivery-time']='3 days';
+    console.log(product);
+
+    const product1={
+      name: 'basketball',
+      price: 2095
+    };
+    const product2={
+      name: 'football',
+      price: 2090
+    };
+
+    function comparePrice(product1,product2){
+      if(product1.price>product2.price)
+        return product2;
+      else if(product1.price<product2.price)
+        return product1;
+      else
+        return 'products are of equal price';
+    }
+    console.log(comparePrice(product1,product2));
+
+    let str='Good Morning';
+    let lower=str.toLowerCase();
+    console.log(lower);
+
+    let string='test';
+    console.log(string.repeat(2));
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="button-2">hello again!!!</button>
+	<script> 
+    /*
+    console.log(document.title);
+    document.title='dom';
+    console.log(document.body);
+    console.log(typeof document.body);
+    console.log(document.body.innerHTML);
+    document.body.innerHTML='changed';
+    document.body.innerHTML='<button>good job</button>';
+    */
+    console.log(document.querySelector('button'));
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML='changed';
+    console.log(document.querySelector('.button-2').innerHTML);
+    document.querySelector('.button-2').innerHTML='changed again';
+
+    const buttonElement=document.querySelector('.button-2');
+    console.log(buttonElement);
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
