@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+</head>
+<body>
+  <button>9a</button>
+  <button class="button">9b</button>
+  <br><br>
+  <button onclick="
+    document.querySelector('.choice').innerHTML='You choose: Heads';
+  ">heads</button>
+  <button onclick="
+    document.querySelector('.choice').innerHTML='You choose: Tails';
+  ">tails</button>
+  <p class="choice"></p>
+  <script>
+    console.log(document.querySelector('button'));
+    document.querySelector('.button').innerHTML='9b done!';
+  </script>
+</body>
+</html>
